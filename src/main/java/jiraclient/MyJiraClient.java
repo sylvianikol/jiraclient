@@ -58,14 +58,6 @@ public class MyJiraClient {
 
         Issue issue = promiseIssue.claim();
         return issue.getKey();
-
-
-
-//        IssueRestClient issueClient = restClient.getIssueClient();
-//        IssueInput newIssue = new IssueInputBuilder(
-//                project, key, summary).build();
-//        return issueClient.createIssue(newIssue).claim().getKey();
-
     }
 
     public String fetchData() throws ExecutionException, InterruptedException {
